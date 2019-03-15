@@ -3,7 +3,7 @@ package com.iambedant.mvistarter.feature.base
 import android.app.Activity
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.support.annotation.LayoutRes
+import androidx.annotation.LayoutRes
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector

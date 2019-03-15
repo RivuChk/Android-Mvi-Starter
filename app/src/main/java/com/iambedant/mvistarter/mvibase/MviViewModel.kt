@@ -1,6 +1,6 @@
 package com.iambedant.mvistarter.mvibase
 
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import io.reactivex.Observable
 
 /**

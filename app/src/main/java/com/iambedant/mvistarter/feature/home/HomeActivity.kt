@@ -1,10 +1,10 @@
 package com.iambedant.mvistarter.feature.home
 
 import android.app.Activity
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 
 import com.iambedant.mvistarter.R
 import com.iambedant.mvistarter.data.remote.model.ArticlesItem
@@ -27,7 +27,7 @@ import com.iambedant.mvistarter.feature.base.BaseActivity
 class HomeActivity : BaseActivity(), MviView<HomeIntent, HomeViewState>{
 
     override fun bind() {
-        newsRv.layoutManager = GridLayoutManager(this, 1)
+        newsRv.layoutManager = androidx.recyclerview.widget.GridLayoutManager(this, 1)
         viewModel.processIntents(intents())
         viewModel.states().observe(this, Observer { if (it != null) render(it) })
     }

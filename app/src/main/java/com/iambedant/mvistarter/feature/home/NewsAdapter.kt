@@ -1,6 +1,6 @@
 package com.iambedant.mvistarter.feature.home
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.iambedant.mvistarter.R
@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.rv_item_news.view.*
  */
 
 
-class NewsAdapter(val dataSource: List<ArticlesItem>, private val share:(ArticlesItem)->Unit) : RecyclerView.Adapter<ViewHolder>() {
+class NewsAdapter(val dataSource: List<ArticlesItem>, private val share:(ArticlesItem)->Unit) : androidx.recyclerview.widget.RecyclerView.Adapter<ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -39,7 +39,7 @@ class NewsAdapter(val dataSource: List<ArticlesItem>, private val share:(Article
 
 }
 
-class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+class ViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
     val item = view
     val headline = view.headlineTv
     val coverImage= view.coverImage

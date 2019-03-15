@@ -1,7 +1,7 @@
 package com.iambedant.mvistarter.login
 
-import android.arch.core.executor.testing.InstantTaskExecutorRule
-import android.arch.lifecycle.Observer
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.lifecycle.Observer
 import com.iambedant.mvistarter.data.Repository
 import com.iambedant.mvistarter.data.remote.model.LoginResponse
 import com.iambedant.mvistarter.data.remote.model.Response
